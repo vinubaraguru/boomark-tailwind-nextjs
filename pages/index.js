@@ -1,3 +1,4 @@
+import { info } from 'autoprefixer'
 import Head from 'next/head'
 
 export default function Home() {
@@ -118,8 +119,110 @@ export default function Home() {
           <div className='hidden lg:block overflow-hidden bg-bookmark-purple rounded-r-full absolute h-80 w-2/4 -bottom-24 -left-36'>
           </div>
         </div>
-      </section>
 
+        <section className='py-20 mt-20'>
+          <div className='sm:w-3/4 lg:w-5/12 mx-auto px-2'>
+            <h1 className='text-center text-3xl text-bookmark-blue'>Download the extension</h1>
+          <p className='mt-4 text-center text-bookmark-grey'>
+              A clean and simple interface to organize your favourite website. Open a new browser tab and screen
+              load instantly. try it fot free
+            </p>
+          </div>
+          <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16'>
+            <div className='flex flex-col rounded-md shadow-md lg:mb-16'>
+                <div className='p-6 flex flex-col items-center'>
+                    <img src='./imgs/logo-chrome.svg' alt=''/>
+                    <h3 className='mt-5  text-bookmark-blue text-lg'>Add to chrome</h3>
+                    <p className='mb-2 text-bookmark-grey font-light'>Minimum version 62</p>
+                </div>
+                <hr className='border-b border-bookmark-white'/>
+                <div className='flex p-6'>
+                  <button type='button' className='flex-1 btn btn-purple hover:bg-bookmark-white hover:text-bookmark-blue'>Add & Install extension</button>
+                </div>
+            </div>
+
+            <div className='flex flex-col rounded-md shadow-md lg:mt-8 lg:mb-8'>
+                <div className='p-6 flex flex-col items-center'>
+                    <img src='./imgs/logo-firefox.svg' alt=''/>
+                    <h3 className='mt-5  text-bookmark-blue text-lg'>Add to chrome</h3>
+                    <p className='mb-2 text-bookmark-grey font-light'>Minimum version 62</p>
+                </div>
+                <hr className='border-b border-bookmark-white'/>
+                <div className='flex p-6'>
+                  <button type='button' className='flex-1 btn btn-purple hover:bg-bookmark-white hover:text-bookmark-blue'>Add & Install extension</button>
+                </div>
+            </div>
+
+            <div className='flex flex-col rounded-md shadow-md lg:mt-16'>
+                <div className='p-6 flex flex-col items-center'>
+                    <img src='./imgs/logo-opera.svg' alt=''/>
+                    <h3 className='mt-5  text-bookmark-blue text-lg'>Add to chrome</h3>
+                    <p className='mb-2 text-bookmark-grey font-light'>Minimum version 62</p>
+                </div>
+                <hr className='border-b border-bookmark-white'/>
+                <div className='flex p-6'>
+                  <button type='button' className='flex-1 btn btn-purple hover:bg-bookmark-white hover:text-bookmark-blue'>Add & Install extension</button>
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section className='bg-bookmark-white py-20'>
+          <div className='container'>
+            <div className='sm:w-3/4 lg:w-5/12 mx-auto px-2'>
+              <h1 className='text-3xl text-center text-bookmark-blue'>Download the extension</h1>
+            <p className='mt-4 text-center text-bookmark-grey'>
+              A clean and simple interface to organize your favourite website. Open a new browser tab and screen
+              load instantly. try it fot free
+            </p>
+            </div>
+            <div className='flex flex-col sm:w-3/4 lg:w-5/12 mt-12 mx-auto'>
+              <div className='flex items-center border-b py-4'>
+                <span className='flex-1'> what is bookmark</span>
+                <i className='fas fa-chevron-down'/>
+              </div>
+              <div className='flex items-center border-b py-4'>
+                <span className='flex-1'> what is bookmark</span>
+                <i className='fas fa-chevron-down'/>
+              </div>
+              <div className='flex items-center border-b py-4'>
+                <span className='flex-1'> what is bookmark</span>
+                <i className='fas fa-chevron-down'/>
+              </div>
+              <button type='button' className='flex self-center mt-5 btn btn-purple hover:bg-bookmark-white hover:text-bookmark-blue'>More Info</button>
+
+            </div>
+          </div>
+        </section>
+        
+        <section className='bg-bookmark-purple text-bookmark-white py-20'>
+          <div className='container'>
+            <div className='sm:w-3/4 lg:w-5/12 mx-auto '>
+              <p className='font-light uppercase text-center mb-8'>35,000+ ALREADY JOINED</p>
+              <h1 className='text-center text-3xl'>stay upto-date with what we are doing</h1>
+              <div className='flex flex-col sm:flex-row gap-6 mt-8'>
+                <input className='px-2 py-3 flex-1 rounded-md text-bookmark-blue focus:outline-none' type="text" placeholder='Enter your email address'/>
+                <button type='button' className='btn bg-bookmark-red'>Contact Us</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='bg-bookmark-blue py-8'>
+          <div className='container flex flex-col md:flex-row items-center'>
+            <div className='flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12'>
+              <img src='./imgs/logo-bookmark-white.png' alt=''/>
+              <u1 className="flex text-bookmark-white uppercase gap-12  text-xs">
+                <li className='cursor-pointer'>Features</li>
+                <li className='cursor-pointer'>Pricing</li>
+                <li className='cursor-pointer'>Contact</li>
+              </u1>
+            </div>
+          </div>
+
+        </section>
+
+      </section>
     </div>
   )
 }
