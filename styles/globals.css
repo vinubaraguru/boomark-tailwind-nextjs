@@ -1,16 +1,17 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+.btn{
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.btn-purple{
+    @apply bg-bookmark-purple text-bookmark-white
 }
 
-* {
-  box-sizing: border-box;
+.btn-white {
+    @apply bg-bookmark-white 
 }
