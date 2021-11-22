@@ -219,9 +219,7 @@ export default function Home() {
               </u1>
             </div>
           </div>
-
         </section>
-
       </section>
     </div>
   )
